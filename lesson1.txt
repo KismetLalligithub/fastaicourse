@@ -87,3 +87,7 @@ Tabular analysis - prediction models
 		dls = TabularDataLoaders.from_csv(path/'adult.csv', path=path, y_names="salary", cat_names = ['workclass', 'education', 'marital-status', 'occupation', 'relationship', cont_names = ['age', 'fnlwgt', 'education-num'], procs = [Categorify, FillMissing, Normalize])
 
 
+	have to tell which columns are categorical, 
+	which ones are continuous -> cont_name
+
+dls.show_batch() -> shows the datas
