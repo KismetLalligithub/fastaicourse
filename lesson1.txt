@@ -1,0 +1,13 @@
+dls = DataBlock(
+	blocks=(ImageBlock, CategoryBlock), 
+	get_items=get_image_files, 
+	splitter=RandomSplitter(valid_pct=0.2, seed=42), 
+	get_y=parent.label, 
+	item_tfms=[Resize(192, method='squish')]
+).dataLoader(path)
+
+
+what does blocks=(ImageBlock, CategoryBlock) mean: 
+	The first parameter is the input given to the model. 
+	The second parameter is what the output could be, in a category of things. 
+
