@@ -22,3 +22,10 @@ len(failed)
 	failed is a list of images that are not valid images or images at all. 
 	then failed.map(Path.unlink), maps the Path.unlink function on the failed list. 
 
+need to put aside a batch to test your own model, VERY IMPORTANT STEP
+
+	splitter=RandomSplitter(valid_pct=0.2, seed=42)
+		
+		valid_pct=0.2 means that we take 20% of the training dataset and use it to test the model.
+		seed=42 means that each batch has 42 elements. 
+
