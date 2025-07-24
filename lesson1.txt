@@ -101,4 +101,8 @@ CollabDataLoaders.from_csv(path/'ratings.csv')
 	take data set: which users like which products use to guess what products that they might like by finding similar users.
 		similar being people that like the same products. 
 
+
+create a learner again
+learn = collab_learner(dls, y_range=(0.5, 5.5))
+learn.fine_tune(10) -> 10 for the batch size? 
  
