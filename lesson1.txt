@@ -105,4 +105,8 @@ CollabDataLoaders.from_csv(path/'ratings.csv')
 create a learner again
 learn = collab_learner(dls, y_range=(0.5, 5.5))
 learn.fine_tune(10) -> 10 for the batch size? 
- 
+
+
+machine learning model: 
+	inputs + weights -> model -> results 
+		weighted sum of weights -> negatives zero'd out, done for each layer.  
