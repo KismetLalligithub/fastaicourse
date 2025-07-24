@@ -29,3 +29,17 @@ need to put aside a batch to test your own model, VERY IMPORTANT STEP
 		valid_pct=0.2 means that we take 20% of the training dataset and use it to test the model.
 		seed=42 means that each batch has 42 elements. 
 
+How do we know the correct label? 
+
+	get_y=parent.label, function that returns the parent folder of the path. 
+
+All inputs need to be of the same size: 
+	item_tfms=[Resize(192, method='squish')]).dataloaders(path)
+	Two ways to either crop or squish. 
+	
+Dataloaders is what pytorch iterates through to grab a bunch of your data. 
+	Done through using the paralelization of GPUs. 
+
+dataloader feeds the model with a batch of the data at once.
+	Amazing how GPUs make this possible even at a small scale remarkable. 
+
