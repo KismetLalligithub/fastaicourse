@@ -90,4 +90,8 @@ Tabular analysis - prediction models
 	have to tell which columns are categorical, 
 	which ones are continuous -> cont_name
 
-dls.show_batch() -> shows the datas
+dls.show_batch() -> shows the data
+
+learn = tabular_learner(dls, metrics=accuracy)
+learn.fit_one_cycle(2)
+	every data table is different, pictures are the same so we do not fine tune. 
