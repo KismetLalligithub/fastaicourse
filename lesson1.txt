@@ -49,4 +49,9 @@ Learner combines the model and the data.
 
 learn = vision_learner(dls, resnet18, metrics=error_rate)
 	dls -> data
-	resnet18 -> model
+	resnet18 -> mode
+learn.fine_tune(3)
+
+how this is done so quickly, resnet18 in this example is a pretrained model, where the weights are available. 
+	fastai gets the weights for the user and also fine tunes the weights for you, therefore learn.fine_tune(3)
+
