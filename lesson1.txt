@@ -60,4 +60,8 @@ is_bird,_,probs = learn.predict(PILImage.create('bird.jpg'))
 print(f"This is a: {is_bird}")
 print(f"Probability it's a bird: {probs[0]:.4f}")
 
-_ -> bird or not as an integer. 
+_ -> bird or not as an integer.
+
+Computer Vision segmentation: 
+	segmentation: take photos and color every pixel. 
+ 
