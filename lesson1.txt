@@ -55,3 +55,9 @@ learn.fine_tune(3)
 how this is done so quickly, resnet18 in this example is a pretrained model, where the weights are available. 
 	fastai gets the weights for the user and also fine tunes the weights for you, therefore learn.fine_tune(3)
 
+
+is_bird,_,probs = learn.predict(PILImage.create('bird.jpg'))
+print(f"This is a: {is_bird}")
+print(f"Probability it's a bird: {probs[0]:.4f}")
+
+_ -> bird or not as an integer. 
