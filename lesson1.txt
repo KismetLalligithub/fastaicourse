@@ -11,3 +11,14 @@ what does blocks=(ImageBlock, CategoryBlock) mean:
 	The first parameter is the input given to the model. 
 	The second parameter is what the output could be, in a category of things. 
 
+# Refining Data mediocre example
+
+failed = verify_images(get_image_files(path))
+failed.map(Path.unlink)
+len(failed)
+
+-> obviously get_image_files(path) returns all the images at the specified path. 
+	then passed into verify_images which validates each of the images. 
+	failed is a list of images that are not valid images or images at all. 
+	then failed.map(Path.unlink), maps the Path.unlink function on the failed list. 
+
