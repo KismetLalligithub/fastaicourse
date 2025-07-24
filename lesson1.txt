@@ -76,4 +76,14 @@ Segmentation code:
 learn = unet_learner(dls, resnet34)
 learn.fine_tune(8)
 
-^ Above code to train a segmentation model, extremely similar to the classification model, but has Segmentation.DataLoaders() 
+^ Above code to train a segmentation model, extremely similar to the classification model, but has Segmentation.DataLoaders()
+
+
+Tabular analysis - prediction models
+
+	Income prediction example
+		from fastai.tabular.all import * 
+		path = untar_data(URLs.ADULT_SAMPLE)	
+		dls = TabularDataLoaders.from_csv(path/'adult.csv', path=path, y_names="salary", cat_names = ['workclass', 'education', 'marital-status', 'occupation', 'relationship', cont_names = ['age', 'fnlwgt', 'education-num'], procs = [Categorify, FillMissing, Normalize])
+
+
