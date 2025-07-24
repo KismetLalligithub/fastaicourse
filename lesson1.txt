@@ -41,5 +41,12 @@ Dataloaders is what pytorch iterates through to grab a bunch of your data.
 	Done through using the paralelization of GPUs. 
 
 dataloader feeds the model with a batch of the data at once.
-	Amazing how GPUs make this possible even at a small scale remarkable. 
+	Amazing how GPUs make this possible even at a small scale remarkable.
 
+Now the model
+
+Learner combines the model and the data.  
+
+learn = vision_learner(dls, resnet18, metrics=error_rate)
+	dls -> data
+	resnet18 -> model
