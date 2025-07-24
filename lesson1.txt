@@ -94,4 +94,11 @@ dls.show_batch() -> shows the data
 
 learn = tabular_learner(dls, metrics=accuracy)
 learn.fit_one_cycle(2)
-	every data table is different, pictures are the same so we do not fine tune. 
+	every data table is different, pictures are the same so we do not fine tune.
+
+CollabDataLoaders.from_csv(path/'ratings.csv')
+^ recommendation systems
+	take data set: which users like which products use to guess what products that they might like by finding similar users.
+		similar being people that like the same products. 
+
+ 
