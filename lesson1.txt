@@ -64,4 +64,8 @@ _ -> bird or not as an integer.
 
 Computer Vision segmentation: 
 	segmentation: take photos and color every pixel. 
+
+	helps in terms of classification. 
+	comparison of a person labeling the pixels through coloring, the model proceeds to predict the colors of each of the pixels. 
+
  
