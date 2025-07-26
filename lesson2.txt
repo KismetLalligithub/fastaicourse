@@ -6,3 +6,9 @@ Step after getting data:
 Precursor
 Computer Vision
 	object recoginition -> self-explanatory
+	Where an object is -> object detection
+	data aug -> for richer models 
+
+nlp + computer vision through DP: 
+	input images output english captions can be good but DP not that reliable for nlp (transformer diff)
+
