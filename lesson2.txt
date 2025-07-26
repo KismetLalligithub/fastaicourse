@@ -1,0 +1,8 @@
+Deployment
+
+Step after getting data: 
+	data cleaning
+
+Precursor
+Computer Vision
+	object recoginition -> self-explanatory
