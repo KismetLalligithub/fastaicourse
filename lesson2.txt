@@ -23,4 +23,7 @@ Gathering Data
 	^ retreives images of grizzly bears from duckduckgo api. 
 
 ??function_name, get the entire documentation of that function. 
+^ this is probably definition 
+doc(function_name) -> for full documentation. 
+
 
