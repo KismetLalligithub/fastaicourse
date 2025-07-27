@@ -12,3 +12,13 @@ Computer Vision
 nlp + computer vision through DP: 
 	input images output english captions can be good but DP not that reliable for nlp (transformer diff)
 
+cleaner = ImageClassifierCleaner(learner)
+cleaner
+^ data cleaning. 
+
+Gathering Data
+	search_images_ddg -> duckduckgo api to search for images. 
+	bing -> can be used as well, sdk keys take forever. 
+	img = search_images_ddg('grizzly bear')
+	^ retreives images of grizzly bears from duckduckgo api. 
+
