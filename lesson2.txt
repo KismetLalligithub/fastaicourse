@@ -22,3 +22,5 @@ Gathering Data
 	img = search_images_ddg('grizzly bear')
 	^ retreives images of grizzly bears from duckduckgo api. 
 
+??function_name, get the entire documentation of that function. 
+
