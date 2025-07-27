@@ -27,3 +27,10 @@ Gathering Data
 doc(function_name) -> for full documentation. 
 
 
+before cleaning data -> train the model. 
+
+data manip
+	squish
+	bears = bears.new(item_tfms=Resize(128, ResizeMethod.Squish))
+	padding
+	bears = bears.new(item_tfms=Resize(128, ResizeMethod.Pad, pad_mode='zeros'))
